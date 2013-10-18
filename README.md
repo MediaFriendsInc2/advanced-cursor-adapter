@@ -10,11 +10,13 @@ Features
 * Standard CursorAdapter interface with from and to bindings
 * Supports ViewBinder for custom bindings
 * Can be used with LoaderManager
-* Compatable with Android 2.1+
+* Compatible with Android 2.1+
 
 Usage
 ----------
-Extend the AdvancedCursorAdapter base class and override the newView() method. If using for multiple view types user will also need to override getItemViewType(int position) and getViewTypeCount()
+Extend the AdvancedCursorAdapter base class and override the newView() method. 
+
+If using multiple view types, getItemViewType(int position) and getViewTypeCount() will also need to be overridden.
 
 ```java
 AdvancedCursorAdapter adapter = new AdvancedCursorAdapter(Context c, String[] from, int[] to)
